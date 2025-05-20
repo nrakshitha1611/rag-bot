@@ -1,0 +1,7 @@
+os
+warnings
+python-pptx
+langchain-community
+langchain
+sentence-transformers
+groq
