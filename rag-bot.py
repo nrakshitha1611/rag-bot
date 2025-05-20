@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Configuration constants
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "your_groq_api_key"
 MAX_INPUT_TOKENS = 3000
 MAX_OUTPUT_TOKENS = 500
 
@@ -62,9 +62,6 @@ def configure_qa_system(vector_database):
                 max_tokens=MAX_OUTPUT_TOKENS,
                 **kwargs
             )
-
-            # Debug the response structure
-            # print(f"Groq API Response: {response}")
 
             # Extract the generated response correctly
             return response.choices[0].message.content
